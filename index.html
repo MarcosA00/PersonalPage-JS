@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Marcos CR | Blog Personal</title>
+
+        <!-- Estilos CSS. -->
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Slider plugin -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+        <!-- Moment -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es-mx.min.js"></script>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <section id="global">
+            <!-- Header. -->
+            <header>
+                <div id="logo">
+                    <h1>Marcos CR</h1>
+                </div>
+
+                <!-- Div para solucionar vacios. -->
+                <div class="clearFix"></div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Reloj</a></li>
+                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Slider. -->
+            <div id="slider">
+                <div class="bxslider">
+                    <div><img src="./img/hojas.jpg" title="Hojas" alt="Hojas"></div>
+                    <div><img src="./img/rojo.jpg" title="Rojo" alt="Rojo"></div>
+                    <div><img src="./img/cielo.jpg" title="Cielo" alt="Cielo"></div>
+                    <div><img src="./img/caracol.jpg" title="Caracol" alt="Caracol"></div>
+                </div>
+            </div>
+
+            <!-- Contenido. -->
+            <section id="content">
+                <div id="posts">
+                    <!-- Cargar posts desde json -->
+                </div>
+
+                <!-- Sidebar. -->
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span>¿Quien soy?</span></h4>
+                        <img src="./img/caracol.jpg" alt="" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci maiores aut labore? Cumque deserunt, aperiam minima ad perferendis cum esse fugiat quas voluptatum vero!
+                        </p>
+                    </div>
+
+                    <!-- Formulario Login -->
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form>
+                            <label for="name">
+                                Nombre
+                            </label>
+                            <input type="text" name="name" />
+                            
+                            <label for="email">
+                                Correo
+                            </label>
+                            <input type="text" name="email" />
+
+                            <label for="password">
+                                Contraseña
+                            </label>
+                            <input type="password" name="password" />
+                            
+                            <input type="submit" value="Entrar" />
+                        </form>
+                    </div>
+                </aside>
+
+                <div class="clearFix"></div>
+            </section>
+        </section>
+        <footer>
+            Curso de JS
+        </footer>
+    </body>
+</html>
